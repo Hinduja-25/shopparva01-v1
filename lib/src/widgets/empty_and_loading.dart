@@ -7,10 +7,12 @@ class EmptyStateCard extends StatelessWidget {
     super.key,
     required this.title,
     required this.message,
+    this.action,
   });
 
   final String title;
   final String message;
+  final Widget? action;
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +47,10 @@ class EmptyStateCard extends StatelessWidget {
                   .bodyMedium
                   ?.copyWith(color: Colors.white70),
             ),
+            if (action != null) ...[
+              const SizedBox(height: 16),
+              action!,
+            ],
           ],
         ),
       ),

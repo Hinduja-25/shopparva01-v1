@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/api_client.dart';
 import '../models/product.dart';
+import '../models/product_deal.dart';
 
 class ProductRepository {
   ProductRepository(this._client);
@@ -87,5 +88,20 @@ class ProductRepository {
       }
     }
     return results;
+  }
+
+  /// Search for product deals with price comparison across platforms
+  Future<List<ProductDeal>> searchForDeals(String query) async {
+    final Response<dynamic> response = await _client.dio.get(
+      '/search/compare',
+      queryParameters: {'q': query},
+    );
+
+    final data = response.data as Map<String, dynamic>;
+    final List<dynamic> results = data['results'] as List<dynamic>? ?? [];
+
+    return results
+        .map((e) => ProductDeal.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 }

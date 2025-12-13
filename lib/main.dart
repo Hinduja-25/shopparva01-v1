@@ -7,7 +7,7 @@ import 'src/screens/home_screen.dart';
 import 'src/screens/ar_try_on_screen.dart';
 import 'src/screens/deals_screen.dart';
 import 'src/screens/make_my_kit_screen.dart';
-import 'src/screens/price_tracker_screen.dart';
+import 'src/screens/profile_screen.dart';
 import 'src/screens/search_screen.dart';
 import 'src/state/app_providers.dart';
 import 'src/widgets/bottom_nav_bar.dart';
@@ -31,9 +31,8 @@ class ShopparvaApp extends ConsumerWidget {
       theme: isHighContrast
           ? AppTheme.highContrastLightTheme
           : AppTheme.lightTheme,
-      darkTheme: isHighContrast
-          ? AppTheme.highContrastDarkTheme
-          : AppTheme.darkTheme,
+      darkTheme:
+          isHighContrast ? AppTheme.highContrastDarkTheme : AppTheme.darkTheme,
       themeMode: ThemeMode.dark,
       home: const _RootShell(),
       routes: {
@@ -71,6 +70,19 @@ class _RootShellState extends ConsumerState<_RootShell>
   )..repeat(reverse: true);
 
   @override
+  void initState() {
+    super.initState();
+    // Listen to dealSearchQueryProvider to switch to Deals tab
+    ref.listenManual(dealSearchQueryProvider, (previous, next) {
+      if (next != null && next.isNotEmpty) {
+        setState(() {
+          _currentIndex = 1; // Switch to Deals tab
+        });
+      }
+    });
+  }
+
+  @override
   void dispose() {
     _assistantController.dispose();
     super.dispose();
@@ -83,7 +95,7 @@ class _RootShellState extends ConsumerState<_RootShell>
       const DealsScreen(),
       const MakeMyKitScreen(),
       const ArTryOnScreen(),
-      const PriceTrackerScreen(),
+      const ProfileScreen(),
     ];
 
     return Scaffold(

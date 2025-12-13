@@ -8,6 +8,7 @@ import '../widgets/empty_and_loading.dart';
 import '../widgets/product_detail_modal.dart';
 import '../widgets/product_grid.dart';
 import 'price_tracker_screen.dart';
+import 'search_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -172,10 +173,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       hintStyle: TextStyle(color: Colors.white54),
                     ),
                     onSubmitted: (value) {
+                      if (value.trim().isEmpty) return;
                       FocusScope.of(context).unfocus();
-                      ref.read(searchQueryProvider.notifier).state = value;
-                      // In a real app we would navigate to SearchScreen, but
-                      // Antigravity can wire this via storybook routes.
+                      // Set query for Deal tab and navigate to it
+                      ref.read(dealSearchQueryProvider.notifier).state = value;
+                      // The listener in main.dart will switch to Deal tab
                     },
                   ),
                 ),

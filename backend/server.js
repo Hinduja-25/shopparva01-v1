@@ -3,2501 +3,1123 @@ const http = require('http');
 const products = [
   {
     "id": "prod_1",
-    "title": "Dyson Electronics Item 1",
-    "brand": "Dyson",
-    "description": "This is a high-quality electronics product from Dyson. Great value for money.",
+    "title": "Apple iPhone 14 Pro",
+    "modelName": "Apple iPhone 14 Pro",
+    "brand": "Apple",
+    "description": "6.1-inch Super Retina XDR display with ProMotion. A16 Bionic chip. Pro camera system with 48MP Main camera. Up to 29 hours video playback.",
     "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=1"
+      "https://picsum.photos/400?random=iphone14"
     ],
-    "rating": "4.4",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 475.24,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 522.76,
+        "seller": "Amazon India",
+        "price": 119900,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "10%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_2",
-    "title": "Adidas Beauty Item 2",
-    "brand": "Adidas",
-    "description": "This is a high-quality beauty product from Adidas. Great value for money.",
-    "category": "Beauty",
+    "title": "Apple iPhone 14 Pro",
+    "modelName": "Apple iPhone 14 Pro",
+    "brand": "Apple",
+    "description": "6.1-inch Super Retina XDR display with ProMotion. A16 Bionic chip. Pro camera system with 48MP Main camera. Up to 29 hours video playback.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=2"
+      "https://picsum.photos/400?random=iphone14"
     ],
-    "rating": "3.5",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 921.2,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1013.32,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Flipkart Retail",
+        "price": 121499,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "8%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_3",
-    "title": "Apple Electronics Item 3",
+    "title": "Apple iPhone 14 Pro",
+    "modelName": "Apple iPhone 14 Pro",
     "brand": "Apple",
-    "description": "This is a high-quality electronics product from Apple. Great value for money.",
+    "description": "6.1-inch Super Retina XDR display with ProMotion. A16 Bionic chip. Pro camera system with 48MP Main camera. Up to 29 hours video playback.",
     "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=3"
+      "https://picsum.photos/400?random=iphone14"
     ],
-    "rating": "4.4",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 478.66,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 526.53,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma Retail",
+        "price": 124990,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "5%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_4",
-    "title": "Adidas Fashion Item 4",
-    "brand": "Adidas",
-    "description": "This is a high-quality fashion product from Adidas. Great value for money.",
-    "category": "Fashion",
+    "title": "Apple iPhone 14 Pro",
+    "modelName": "Apple iPhone 14 Pro",
+    "brand": "Apple",
+    "description": "6.1-inch Super Retina XDR display with ProMotion. A16 Bionic chip. Pro camera system with 48MP Main camera. Up to 29 hours video playback.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=4"
+      "https://picsum.photos/400?random=iphone14"
     ],
-    "rating": "3.8",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 104.53,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 114.98,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Reliance Digital",
+        "price": 122900,
+        "marketplace": "Reliance Digital",
+        "url": "https://reliancedigital.com",
+        "discount": "7%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_5",
-    "title": "Nike Electronics Item 5",
-    "brand": "Nike",
-    "description": "This is a high-quality electronics product from Nike. Great value for money.",
+    "title": "Samsung Galaxy S23 Ultra",
+    "modelName": "Samsung Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "description": "6.8-inch Dynamic AMOLED 2X display. Snapdragon 8 Gen 2. 200MP camera with 100x Space Zoom. S Pen included. All-day battery.",
     "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=5"
+      "https://picsum.photos/400?random=s23ultra"
     ],
-    "rating": "4.5",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 217.72,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 239.49,
+        "seller": "Appario Retail",
+        "price": 109999,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "15%",
+        "delivery": "1 day"
       }
     ]
   },
   {
     "id": "prod_6",
-    "title": "Adidas Fashion Item 6",
-    "brand": "Adidas",
-    "description": "This is a high-quality fashion product from Adidas. Great value for money.",
-    "category": "Fashion",
+    "title": "Samsung Galaxy S23 Ultra",
+    "modelName": "Samsung Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "description": "6.8-inch Dynamic AMOLED 2X display. Snapdragon 8 Gen 2. 200MP camera with 100x Space Zoom. S Pen included. All-day battery.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=6"
+      "https://picsum.photos/400?random=s23ultra"
     ],
-    "rating": "4.9",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 736.69,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 810.36,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Samsung Brand Store",
+        "price": 112999,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "12%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_7",
-    "title": "Samsung Fashion Item 7",
+    "title": "Samsung Galaxy S23 Ultra",
+    "modelName": "Samsung Galaxy S23 Ultra",
     "brand": "Samsung",
-    "description": "This is a high-quality fashion product from Samsung. Great value for money.",
-    "category": "Fashion",
+    "description": "6.8-inch Dynamic AMOLED 2X display. Snapdragon 8 Gen 2. 200MP camera with 100x Space Zoom. S Pen included. All-day battery.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=7"
+      "https://picsum.photos/400?random=s23ultra"
     ],
-    "rating": "4.0",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 689.12,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 758.03,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Myntra Electronics",
+        "price": 114999,
+        "marketplace": "Myntra",
+        "url": "https://myntra.com",
+        "discount": "10%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_8",
-    "title": "Nike Sports Item 8",
-    "brand": "Nike",
-    "description": "This is a high-quality sports product from Nike. Great value for money.",
-    "category": "Sports",
+    "title": "Samsung Galaxy S23 Ultra",
+    "modelName": "Samsung Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "description": "6.8-inch Dynamic AMOLED 2X display. Snapdragon 8 Gen 2. 200MP camera with 100x Space Zoom. S Pen included. All-day battery.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=8"
+      "https://picsum.photos/400?random=s23ultra"
     ],
-    "rating": "4.0",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 589.83,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 648.81,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma",
+        "price": 111499,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "13%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_9",
-    "title": "Samsung Home Item 9",
+    "title": "Samsung Galaxy S23 Ultra",
+    "modelName": "Samsung Galaxy S23 Ultra",
     "brand": "Samsung",
-    "description": "This is a high-quality home product from Samsung. Great value for money.",
-    "category": "Home",
+    "description": "6.8-inch Dynamic AMOLED 2X display. Snapdragon 8 Gen 2. 200MP camera with 100x Space Zoom. S Pen included. All-day battery.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=9"
+      "https://picsum.photos/400?random=s23ultra"
     ],
     "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 892.86,
+        "seller": "ShopParva Official",
+        "price": 108999,
         "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 982.15,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://shopparva.com",
+        "discount": "16%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_10",
-    "title": "Dyson Fashion Item 10",
-    "brand": "Dyson",
-    "description": "This is a high-quality fashion product from Dyson. Great value for money.",
-    "category": "Fashion",
+    "title": "OnePlus 11 5G",
+    "modelName": "OnePlus 11 5G",
+    "brand": "OnePlus",
+    "description": "6.7-inch AMOLED display with 120Hz. Snapdragon 8 Gen 2. Hasselblad Camera for Mobile. 100W SUPERVOOC fast charging.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=10"
+      "https://picsum.photos/400?random=oneplus11"
     ],
-    "rating": "3.8",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 194.53,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 213.98,
+        "seller": "OnePlus Official",
+        "price": 56999,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "12%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_11",
-    "title": "LG Beauty Item 11",
-    "brand": "LG",
-    "description": "This is a high-quality beauty product from LG. Great value for money.",
-    "category": "Beauty",
+    "title": "OnePlus 11 5G",
+    "modelName": "OnePlus 11 5G",
+    "brand": "OnePlus",
+    "description": "6.7-inch AMOLED display with 120Hz. Snapdragon 8 Gen 2. Hasselblad Camera for Mobile. 100W SUPERVOOC fast charging.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=11"
+      "https://picsum.photos/400?random=oneplus11"
     ],
-    "rating": "4.6",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 955.74,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1051.31,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Flipkart",
+        "price": 58499,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "10%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_12",
-    "title": "Samsung Home Item 12",
-    "brand": "Samsung",
-    "description": "This is a high-quality home product from Samsung. Great value for money.",
-    "category": "Home",
+    "title": "OnePlus 11 5G",
+    "modelName": "OnePlus 11 5G",
+    "brand": "OnePlus",
+    "description": "6.7-inch AMOLED display with 120Hz. Snapdragon 8 Gen 2. Hasselblad Camera for Mobile. 100W SUPERVOOC fast charging.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=12"
+      "https://picsum.photos/400?random=oneplus11"
     ],
-    "rating": "4.7",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 853,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 938.3,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Reliance Digital",
+        "price": 59999,
+        "marketplace": "Reliance Digital",
+        "url": "https://reliancedigital.com",
+        "discount": "8%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_13",
-    "title": "LG Home Item 13",
-    "brand": "LG",
-    "description": "This is a high-quality home product from LG. Great value for money.",
-    "category": "Home",
+    "title": "MacBook Air M2",
+    "modelName": "MacBook Air M2",
+    "brand": "Apple",
+    "description": "13.6-inch Liquid Retina display. Apple M2 chip with 8-core CPU. 8GB unified memory. 256GB SSD storage. All-day battery life.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=13"
+      "https://picsum.photos/400?random=macbookair"
     ],
-    "rating": "3.7",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 993.82,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1093.2,
+        "seller": "Appario Retail",
+        "price": 114900,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "5%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_14",
-    "title": "Adidas Beauty Item 14",
-    "brand": "Adidas",
-    "description": "This is a high-quality beauty product from Adidas. Great value for money.",
-    "category": "Beauty",
+    "title": "MacBook Air M2",
+    "modelName": "MacBook Air M2",
+    "brand": "Apple",
+    "description": "13.6-inch Liquid Retina display. Apple M2 chip with 8-core CPU. 8GB unified memory. 256GB SSD storage. All-day battery life.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=14"
+      "https://picsum.photos/400?random=macbookair"
     ],
-    "rating": "3.9",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 593.08,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 652.39,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Apple Authorized",
+        "price": 116900,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "3%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_15",
-    "title": "LG Beauty Item 15",
-    "brand": "LG",
-    "description": "This is a high-quality beauty product from LG. Great value for money.",
-    "category": "Beauty",
+    "title": "MacBook Air M2",
+    "modelName": "MacBook Air M2",
+    "brand": "Apple",
+    "description": "13.6-inch Liquid Retina display. Apple M2 chip with 8-core CPU. 8GB unified memory. 256GB SSD storage. All-day battery life.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=15"
+      "https://picsum.photos/400?random=macbookair"
     ],
-    "rating": "4.5",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 418.11,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 459.92,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma Electronics",
+        "price": 119900,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "0%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_16",
-    "title": "Adidas Electronics Item 16",
-    "brand": "Adidas",
-    "description": "This is a high-quality electronics product from Adidas. Great value for money.",
+    "title": "MacBook Air M2",
+    "modelName": "MacBook Air M2",
+    "brand": "Apple",
+    "description": "13.6-inch Liquid Retina display. Apple M2 chip with 8-core CPU. 8GB unified memory. 256GB SSD storage. All-day battery life.",
     "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=16"
+      "https://picsum.photos/400?random=macbookair"
     ],
-    "rating": "4.1",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 151.04,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 166.14,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Reliance Digital",
+        "price": 117900,
+        "marketplace": "Reliance Digital",
+        "url": "https://reliancedigital.com",
+        "discount": "2%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_17",
-    "title": "Dyson Home Item 17",
-    "brand": "Dyson",
-    "description": "This is a high-quality home product from Dyson. Great value for money.",
-    "category": "Home",
+    "title": "Dell XPS 13",
+    "modelName": "Dell XPS 13",
+    "brand": "Dell",
+    "description": "13.4-inch FHD+ display. 12th Gen Intel Core i7. 16GB RAM. 512GB SSD. Premium InfinityEdge display.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=17"
+      "https://picsum.photos/400?random=dellxps"
     ],
-    "rating": "4.2",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 441.67,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 485.84,
+        "seller": "Dell Official",
+        "price": 109990,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "8%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_18",
-    "title": "Sony Home Item 18",
-    "brand": "Sony",
-    "description": "This is a high-quality home product from Sony. Great value for money.",
-    "category": "Home",
+    "title": "Dell XPS 13",
+    "modelName": "Dell XPS 13",
+    "brand": "Dell",
+    "description": "13.4-inch FHD+ display. 12th Gen Intel Core i7. 16GB RAM. 512GB SSD. Premium InfinityEdge display.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=18"
+      "https://picsum.photos/400?random=dellxps"
     ],
-    "rating": "3.7",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 141.69,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 155.86,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "RetailNet",
+        "price": 112490,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "6%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_19",
-    "title": "Nike Fashion Item 19",
-    "brand": "Nike",
-    "description": "This is a high-quality fashion product from Nike. Great value for money.",
-    "category": "Fashion",
+    "title": "Dell XPS 13",
+    "modelName": "Dell XPS 13",
+    "brand": "Dell",
+    "description": "13.4-inch FHD+ display. 12th Gen Intel Core i7. 16GB RAM. 512GB SSD. Premium InfinityEdge display.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=19"
+      "https://picsum.photos/400?random=dellxps"
     ],
-    "rating": "3.7",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 732.94,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 806.23,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma",
+        "price": 114990,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "4%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_20",
-    "title": "Apple Home Item 20",
-    "brand": "Apple",
-    "description": "This is a high-quality home product from Apple. Great value for money.",
-    "category": "Home",
+    "title": "Sony WH-1000XM5",
+    "modelName": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "description": "Industry-leading noise cancellation. 30-hour battery life. Premium sound quality with LDAC. Multipoint connection.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=20"
+      "https://picsum.photos/400?random=sonywh1000"
     ],
-    "rating": "4.1",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 94.58,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 104.04,
+        "seller": "Cloudtail India",
+        "price": 29990,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "15%",
+        "delivery": "1 day"
       }
     ]
   },
   {
     "id": "prod_21",
-    "title": "Samsung Beauty Item 21",
-    "brand": "Samsung",
-    "description": "This is a high-quality beauty product from Samsung. Great value for money.",
-    "category": "Beauty",
+    "title": "Sony WH-1000XM5",
+    "modelName": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "description": "Industry-leading noise cancellation. 30-hour battery life. Premium sound quality with LDAC. Multipoint connection.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=21"
+      "https://picsum.photos/400?random=sonywh1000"
     ],
-    "rating": "4.3",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 416.84,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 458.52,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Sony India",
+        "price": 31490,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "12%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_22",
-    "title": "Samsung Fashion Item 22",
-    "brand": "Samsung",
-    "description": "This is a high-quality fashion product from Samsung. Great value for money.",
-    "category": "Fashion",
+    "title": "Sony WH-1000XM5",
+    "modelName": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "description": "Industry-leading noise cancellation. 30-hour battery life. Premium sound quality with LDAC. Multipoint connection.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=22"
+      "https://picsum.photos/400?random=sonywh1000"
     ],
-    "rating": "4.1",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 800.9,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 880.99,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Myntra Audio",
+        "price": 32990,
+        "marketplace": "Myntra",
+        "url": "https://myntra.com",
+        "discount": "10%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_23",
-    "title": "Apple Electronics Item 23",
-    "brand": "Apple",
-    "description": "This is a high-quality electronics product from Apple. Great value for money.",
+    "title": "Sony WH-1000XM5",
+    "modelName": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "description": "Industry-leading noise cancellation. 30-hour battery life. Premium sound quality with LDAC. Multipoint connection.",
     "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=23"
+      "https://picsum.photos/400?random=sonywh1000"
     ],
     "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 529.97,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 582.97,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma",
+        "price": 30990,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "13%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_24",
-    "title": "LG Home Item 24",
-    "brand": "LG",
-    "description": "This is a high-quality home product from LG. Great value for money.",
-    "category": "Home",
+    "title": "Sony WH-1000XM5",
+    "modelName": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "description": "Industry-leading noise cancellation. 30-hour battery life. Premium sound quality with LDAC. Multipoint connection.",
+    "category": "Electronics",
     "images": [
-      "https://picsum.photos/400?random=24"
+      "https://picsum.photos/400?random=sonywh1000"
     ],
-    "rating": "3.6",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 682.68,
+        "seller": "ShopParva",
+        "price": 29490,
         "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 750.95,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://shopparva.com",
+        "discount": "16%",
+        "delivery": "1 day"
       }
     ]
   },
   {
     "id": "prod_25",
-    "title": "Dyson Sports Item 25",
-    "brand": "Dyson",
-    "description": "This is a high-quality sports product from Dyson. Great value for money.",
-    "category": "Sports",
+    "title": "Nike Air Max 270",
+    "modelName": "Nike Air Max 270",
+    "brand": "Nike",
+    "description": "Max Air unit for ultimate cushioning. Breathable mesh upper. Durable rubber outsole. Iconic Nike style.",
+    "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=25"
+      "https://picsum.photos/400?random=nikeairmax"
     ],
-    "rating": "3.2",
+    "rating": "4.4",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 611.3,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 672.43,
+        "seller": "Nike Official",
+        "price": 12995,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "20%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_26",
-    "title": "Dyson Fashion Item 26",
-    "brand": "Dyson",
-    "description": "This is a high-quality fashion product from Dyson. Great value for money.",
+    "title": "Nike Air Max 270",
+    "modelName": "Nike Air Max 270",
+    "brand": "Nike",
+    "description": "Max Air unit for ultimate cushioning. Breathable mesh upper. Durable rubber outsole. Iconic Nike style.",
     "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=26"
+      "https://picsum.photos/400?random=nikeairmax"
     ],
-    "rating": "4.5",
+    "rating": "4.4",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 846.69,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 931.36,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Nike Store",
+        "price": 13495,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "18%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_27",
-    "title": "Samsung Sports Item 27",
-    "brand": "Samsung",
-    "description": "This is a high-quality sports product from Samsung. Great value for money.",
-    "category": "Sports",
+    "title": "Nike Air Max 270",
+    "modelName": "Nike Air Max 270",
+    "brand": "Nike",
+    "description": "Max Air unit for ultimate cushioning. Breathable mesh upper. Durable rubber outsole. Iconic Nike style.",
+    "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=27"
+      "https://picsum.photos/400?random=nikeairmax"
     ],
-    "rating": "3.1",
+    "rating": "4.4",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 126.41,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 139.05,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Myntra Fashion",
+        "price": 12795,
+        "marketplace": "Myntra",
+        "url": "https://myntra.com",
+        "discount": "21%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_28",
-    "title": "Adidas Home Item 28",
-    "brand": "Adidas",
-    "description": "This is a high-quality home product from Adidas. Great value for money.",
-    "category": "Home",
+    "title": "Nike Air Max 270",
+    "modelName": "Nike Air Max 270",
+    "brand": "Nike",
+    "description": "Max Air unit for ultimate cushioning. Breathable mesh upper. Durable rubber outsole. Iconic Nike style.",
+    "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=28"
+      "https://picsum.photos/400?random=nikeairmax"
     ],
-    "rating": "3.9",
+    "rating": "4.4",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 600.46,
+        "seller": "ShopParva Sports",
+        "price": 12495,
         "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 660.51,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://shopparva.com",
+        "discount": "23%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_29",
-    "title": "Adidas Fashion Item 29",
+    "title": "Adidas Ultraboost 22",
+    "modelName": "Adidas Ultraboost 22",
     "brand": "Adidas",
-    "description": "This is a high-quality fashion product from Adidas. Great value for money.",
+    "description": "Responsive BOOST cushioning. Primeknit+ upper. Continental rubber outsole. Energy-returning performance.",
     "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=29"
+      "https://picsum.photos/400?random=ultraboost"
     ],
-    "rating": "3.8",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 297.84,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 327.62,
+        "seller": "Adidas Official",
+        "price": 16999,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "15%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_30",
-    "title": "Dyson Fashion Item 30",
-    "brand": "Dyson",
-    "description": "This is a high-quality fashion product from Dyson. Great value for money.",
+    "title": "Adidas Ultraboost 22",
+    "modelName": "Adidas Ultraboost 22",
+    "brand": "Adidas",
+    "description": "Responsive BOOST cushioning. Primeknit+ upper. Continental rubber outsole. Energy-returning performance.",
     "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=30"
+      "https://picsum.photos/400?random=ultraboost"
     ],
-    "rating": "3.8",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 481.24,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 529.36,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Adidas Store",
+        "price": 17499,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "12%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_31",
-    "title": "Samsung Fashion Item 31",
-    "brand": "Samsung",
-    "description": "This is a high-quality fashion product from Samsung. Great value for money.",
+    "title": "Adidas Ultraboost 22",
+    "modelName": "Adidas Ultraboost 22",
+    "brand": "Adidas",
+    "description": "Responsive BOOST cushioning. Primeknit+ upper. Continental rubber outsole. Energy-returning performance.",
     "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=31"
+      "https://picsum.photos/400?random=ultraboost"
     ],
-    "rating": "4.8",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 654.66,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 720.13,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Myntra",
+        "price": 16799,
+        "marketplace": "Myntra",
+        "url": "https://myntra.com",
+        "discount": "16%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_32",
-    "title": "Sony Home Item 32",
-    "brand": "Sony",
-    "description": "This is a high-quality home product from Sony. Great value for money.",
-    "category": "Home",
+    "title": "Levi's 501 Original Jeans",
+    "modelName": "Levi's 501 Original Jeans",
+    "brand": "Levi's",
+    "description": "Classic straight fit. Button fly. Iconic 501 style. Premium denim quality. Timeless design.",
+    "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=32"
+      "https://picsum.photos/400?random=levis501"
     ],
-    "rating": "3.2",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 382.9,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 421.19,
+        "seller": "Levi's Official",
+        "price": 3999,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "25%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_33",
-    "title": "Adidas Beauty Item 33",
-    "brand": "Adidas",
-    "description": "This is a high-quality beauty product from Adidas. Great value for money.",
-    "category": "Beauty",
+    "title": "Levi's 501 Original Jeans",
+    "modelName": "Levi's 501 Original Jeans",
+    "brand": "Levi's",
+    "description": "Classic straight fit. Button fly. Iconic 501 style. Premium denim quality. Timeless design.",
+    "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=33"
+      "https://picsum.photos/400?random=levis501"
     ],
-    "rating": "4.9",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 293.99,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 323.39,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Levi's Store",
+        "price": 4199,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "22%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_34",
-    "title": "Samsung Beauty Item 34",
-    "brand": "Samsung",
-    "description": "This is a high-quality beauty product from Samsung. Great value for money.",
-    "category": "Beauty",
+    "title": "Levi's 501 Original Jeans",
+    "modelName": "Levi's 501 Original Jeans",
+    "brand": "Levi's",
+    "description": "Classic straight fit. Button fly. Iconic 501 style. Premium denim quality. Timeless design.",
+    "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=34"
+      "https://picsum.photos/400?random=levis501"
     ],
-    "rating": "4.9",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 576.88,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 634.57,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Myntra Fashion",
+        "price": 3899,
+        "marketplace": "Myntra",
+        "url": "https://myntra.com",
+        "discount": "27%",
+        "delivery": "2 days"
       }
     ]
   },
   {
     "id": "prod_35",
-    "title": "Sony Fashion Item 35",
-    "brand": "Sony",
-    "description": "This is a high-quality fashion product from Sony. Great value for money.",
+    "title": "Levi's 501 Original Jeans",
+    "modelName": "Levi's 501 Original Jeans",
+    "brand": "Levi's",
+    "description": "Classic straight fit. Button fly. Iconic 501 style. Premium denim quality. Timeless design.",
     "category": "Fashion",
     "images": [
-      "https://picsum.photos/400?random=35"
+      "https://picsum.photos/400?random=levis501"
     ],
-    "rating": "4.0",
+    "rating": "4.5",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 677.4,
+        "seller": "ShopParva Fashion",
+        "price": 3799,
         "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 745.14,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://shopparva.com",
+        "discount": "29%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_36",
-    "title": "Dyson Beauty Item 36",
+    "title": "Dyson V15 Detect",
+    "modelName": "Dyson V15 Detect",
     "brand": "Dyson",
-    "description": "This is a high-quality beauty product from Dyson. Great value for money.",
-    "category": "Beauty",
+    "description": "Laser dust detection. Powerful suction. LCD screen shows particle count. Up to 60 minutes runtime.",
+    "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=36"
+      "https://picsum.photos/400?random=dysonv15"
     ],
-    "rating": "3.7",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 316.32,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 347.95,
+        "seller": "Dyson India",
+        "price": 58900,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "10%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_37",
-    "title": "Sony Sports Item 37",
-    "brand": "Sony",
-    "description": "This is a high-quality sports product from Sony. Great value for money.",
-    "category": "Sports",
+    "title": "Dyson V15 Detect",
+    "modelName": "Dyson V15 Detect",
+    "brand": "Dyson",
+    "description": "Laser dust detection. Powerful suction. LCD screen shows particle count. Up to 60 minutes runtime.",
+    "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=37"
+      "https://picsum.photos/400?random=dysonv15"
     ],
-    "rating": "4.3",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 514.74,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 566.21,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Dyson Official",
+        "price": 59900,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "8%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_38",
-    "title": "LG Fashion Item 38",
-    "brand": "LG",
-    "description": "This is a high-quality fashion product from LG. Great value for money.",
-    "category": "Fashion",
+    "title": "Dyson V15 Detect",
+    "modelName": "Dyson V15 Detect",
+    "brand": "Dyson",
+    "description": "Laser dust detection. Powerful suction. LCD screen shows particle count. Up to 60 minutes runtime.",
+    "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=38"
+      "https://picsum.photos/400?random=dysonv15"
     ],
-    "rating": "3.2",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 647.76,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 712.54,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma",
+        "price": 61900,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "5%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_39",
-    "title": "LG Home Item 39",
-    "brand": "LG",
-    "description": "This is a high-quality home product from LG. Great value for money.",
+    "title": "Dyson V15 Detect",
+    "modelName": "Dyson V15 Detect",
+    "brand": "Dyson",
+    "description": "Laser dust detection. Powerful suction. LCD screen shows particle count. Up to 60 minutes runtime.",
     "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=39"
+      "https://picsum.photos/400?random=dysonv15"
     ],
-    "rating": "3.0",
+    "rating": "4.8",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 763.2,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 839.52,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Reliance Digital",
+        "price": 60900,
+        "marketplace": "Reliance Digital",
+        "url": "https://reliancedigital.com",
+        "discount": "7%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_40",
-    "title": "Dyson Electronics Item 40",
-    "brand": "Dyson",
-    "description": "This is a high-quality electronics product from Dyson. Great value for money.",
-    "category": "Electronics",
+    "title": "LG 55-inch OLED TV",
+    "modelName": "LG 55-inch OLED TV",
+    "brand": "LG",
+    "description": "4K OLED display. α9 Gen5 AI Processor. Dolby Vision IQ. webOS smart platform. Perfect for gaming.",
+    "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=40"
+      "https://picsum.photos/400?random=lgoled"
     ],
-    "rating": "4.9",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 806.84,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 887.52,
+        "seller": "Cloudtail",
+        "price": 129990,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "12%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_41",
-    "title": "LG Home Item 41",
+    "title": "LG 55-inch OLED TV",
+    "modelName": "LG 55-inch OLED TV",
     "brand": "LG",
-    "description": "This is a high-quality home product from LG. Great value for money.",
+    "description": "4K OLED display. α9 Gen5 AI Processor. Dolby Vision IQ. webOS smart platform. Perfect for gaming.",
     "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=41"
+      "https://picsum.photos/400?random=lgoled"
     ],
-    "rating": "3.6",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 839.5,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 923.45,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "LG Official",
+        "price": 132990,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "10%",
+        "delivery": "6 days"
       }
     ]
   },
   {
     "id": "prod_42",
-    "title": "Apple Electronics Item 42",
-    "brand": "Apple",
-    "description": "This is a high-quality electronics product from Apple. Great value for money.",
-    "category": "Electronics",
+    "title": "LG 55-inch OLED TV",
+    "modelName": "LG 55-inch OLED TV",
+    "brand": "LG",
+    "description": "4K OLED display. α9 Gen5 AI Processor. Dolby Vision IQ. webOS smart platform. Perfect for gaming.",
+    "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=42"
+      "https://picsum.photos/400?random=lgoled"
     ],
-    "rating": "3.1",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 369.43,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 406.37,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma Electronics",
+        "price": 127990,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "13%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_43",
-    "title": "Apple Beauty Item 43",
-    "brand": "Apple",
-    "description": "This is a high-quality beauty product from Apple. Great value for money.",
-    "category": "Beauty",
+    "title": "LG 55-inch OLED TV",
+    "modelName": "LG 55-inch OLED TV",
+    "brand": "LG",
+    "description": "4K OLED display. α9 Gen5 AI Processor. Dolby Vision IQ. webOS smart platform. Perfect for gaming.",
+    "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=43"
+      "https://picsum.photos/400?random=lgoled"
     ],
-    "rating": "4.4",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 949.83,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1044.81,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Reliance Digital",
+        "price": 131990,
+        "marketplace": "Reliance Digital",
+        "url": "https://reliancedigital.com",
+        "discount": "11%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_44",
-    "title": "Sony Home Item 44",
-    "brand": "Sony",
-    "description": "This is a high-quality home product from Sony. Great value for money.",
+    "title": "LG 55-inch OLED TV",
+    "modelName": "LG 55-inch OLED TV",
+    "brand": "LG",
+    "description": "4K OLED display. α9 Gen5 AI Processor. Dolby Vision IQ. webOS smart platform. Perfect for gaming.",
     "category": "Home",
     "images": [
-      "https://picsum.photos/400?random=44"
+      "https://picsum.photos/400?random=lgoled"
     ],
-    "rating": "3.6",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 128.96,
+        "seller": "ShopParva Home",
+        "price": 126990,
         "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 141.86,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://shopparva.com",
+        "discount": "14%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_45",
-    "title": "Apple Beauty Item 45",
-    "brand": "Apple",
-    "description": "This is a high-quality beauty product from Apple. Great value for money.",
+    "title": "Dyson Airwrap Styler",
+    "modelName": "Dyson Airwrap Styler",
+    "brand": "Dyson",
+    "description": "Multi-styler for multiple hair types. Coanda effect styling. No extreme heat. Complete styling system.",
     "category": "Beauty",
     "images": [
-      "https://picsum.photos/400?random=45"
+      "https://picsum.photos/400?random=airwrap"
     ],
-    "rating": "4.9",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 854.55,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 940,
+        "seller": "Dyson Official",
+        "price": 45900,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "8%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_46",
-    "title": "Sony Sports Item 46",
-    "brand": "Sony",
-    "description": "This is a high-quality sports product from Sony. Great value for money.",
-    "category": "Sports",
+    "title": "Dyson Airwrap Styler",
+    "modelName": "Dyson Airwrap Styler",
+    "brand": "Dyson",
+    "description": "Multi-styler for multiple hair types. Coanda effect styling. No extreme heat. Complete styling system.",
+    "category": "Beauty",
     "images": [
-      "https://picsum.photos/400?random=46"
+      "https://picsum.photos/400?random=airwrap"
     ],
-    "rating": "4.4",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 850.79,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 935.87,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Dyson India",
+        "price": 46900,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "6%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_47",
-    "title": "Adidas Home Item 47",
-    "brand": "Adidas",
-    "description": "This is a high-quality home product from Adidas. Great value for money.",
-    "category": "Home",
+    "title": "Dyson Airwrap Styler",
+    "modelName": "Dyson Airwrap Styler",
+    "brand": "Dyson",
+    "description": "Multi-styler for multiple hair types. Coanda effect styling. No extreme heat. Complete styling system.",
+    "category": "Beauty",
     "images": [
-      "https://picsum.photos/400?random=47"
+      "https://picsum.photos/400?random=airwrap"
     ],
-    "rating": "4.2",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 1031,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1134.1,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Myntra Beauty",
+        "price": 47900,
+        "marketplace": "Myntra",
+        "url": "https://myntra.com",
+        "discount": "4%",
+        "delivery": "5 days"
       }
     ]
   },
   {
     "id": "prod_48",
-    "title": "Samsung Fashion Item 48",
-    "brand": "Samsung",
-    "description": "This is a high-quality fashion product from Samsung. Great value for money.",
-    "category": "Fashion",
+    "title": "Dyson Airwrap Styler",
+    "modelName": "Dyson Airwrap Styler",
+    "brand": "Dyson",
+    "description": "Multi-styler for multiple hair types. Coanda effect styling. No extreme heat. Complete styling system.",
+    "category": "Beauty",
     "images": [
-      "https://picsum.photos/400?random=48"
+      "https://picsum.photos/400?random=airwrap"
     ],
-    "rating": "3.1",
+    "rating": "4.6",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 731.7,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 804.87,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Croma",
+        "price": 46400,
+        "marketplace": "Croma",
+        "url": "https://croma.com",
+        "discount": "7%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_49",
-    "title": "Sony Fashion Item 49",
-    "brand": "Sony",
-    "description": "This is a high-quality fashion product from Sony. Great value for money.",
-    "category": "Fashion",
+    "title": "Yonex Astrox 99 Pro",
+    "modelName": "Yonex Astrox 99 Pro",
+    "brand": "Yonex",
+    "description": "Professional badminton racket. Rotational Generator System. Namd graphite. Head-heavy balance for power.",
+    "category": "Sports",
     "images": [
-      "https://picsum.photos/400?random=49"
+      "https://picsum.photos/400?random=yonex"
     ],
-    "rating": "5.0",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 335.56,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 369.12,
+        "seller": "Yonex Official",
+        "price": 16990,
         "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://amazon.com",
+        "discount": "10%",
+        "delivery": "3 days"
       }
     ]
   },
   {
     "id": "prod_50",
-    "title": "Adidas Beauty Item 50",
-    "brand": "Adidas",
-    "description": "This is a high-quality beauty product from Adidas. Great value for money.",
-    "category": "Beauty",
+    "title": "Yonex Astrox 99 Pro",
+    "modelName": "Yonex Astrox 99 Pro",
+    "brand": "Yonex",
+    "description": "Professional badminton racket. Rotational Generator System. Namd graphite. Head-heavy balance for power.",
+    "category": "Sports",
     "images": [
-      "https://picsum.photos/400?random=50"
+      "https://picsum.photos/400?random=yonex"
     ],
-    "rating": "3.2",
+    "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 390.44,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 429.48,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "seller": "Sports365",
+        "price": 17490,
+        "marketplace": "Flipkart",
+        "url": "https://flipkart.com",
+        "discount": "8%",
+        "delivery": "4 days"
       }
     ]
   },
   {
     "id": "prod_51",
-    "title": "Nike Beauty Item 51",
-    "brand": "Nike",
-    "description": "This is a high-quality beauty product from Nike. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=51"
-    ],
-    "rating": "3.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 182.76,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 201.04,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_52",
-    "title": "LG Sports Item 52",
-    "brand": "LG",
-    "description": "This is a high-quality sports product from LG. Great value for money.",
+    "title": "Yonex Astrox 99 Pro",
+    "modelName": "Yonex Astrox 99 Pro",
+    "brand": "Yonex",
+    "description": "Professional badminton racket. Rotational Generator System. Namd graphite. Head-heavy balance for power.",
     "category": "Sports",
     "images": [
-      "https://picsum.photos/400?random=52"
-    ],
-    "rating": "4.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 127.92,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 140.71,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_53",
-    "title": "Dyson Home Item 53",
-    "brand": "Dyson",
-    "description": "This is a high-quality home product from Dyson. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=53"
-    ],
-    "rating": "4.8",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 482.49,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 530.74,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_54",
-    "title": "Apple Electronics Item 54",
-    "brand": "Apple",
-    "description": "This is a high-quality electronics product from Apple. Great value for money.",
-    "category": "Electronics",
-    "images": [
-      "https://picsum.photos/400?random=54"
-    ],
-    "rating": "4.2",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 188.14,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 206.95,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_55",
-    "title": "Samsung Fashion Item 55",
-    "brand": "Samsung",
-    "description": "This is a high-quality fashion product from Samsung. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=55"
-    ],
-    "rating": "4.1",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 1004.28,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1104.71,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_56",
-    "title": "LG Home Item 56",
-    "brand": "LG",
-    "description": "This is a high-quality home product from LG. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=56"
-    ],
-    "rating": "5.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 232.47,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 255.72,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_57",
-    "title": "Adidas Sports Item 57",
-    "brand": "Adidas",
-    "description": "This is a high-quality sports product from Adidas. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=57"
-    ],
-    "rating": "4.5",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 452.09,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 497.3,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_58",
-    "title": "Dyson Beauty Item 58",
-    "brand": "Dyson",
-    "description": "This is a high-quality beauty product from Dyson. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=58"
-    ],
-    "rating": "3.3",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 834.44,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 917.88,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_59",
-    "title": "LG Sports Item 59",
-    "brand": "LG",
-    "description": "This is a high-quality sports product from LG. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=59"
-    ],
-    "rating": "4.1",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 916.22,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1007.84,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_60",
-    "title": "Samsung Home Item 60",
-    "brand": "Samsung",
-    "description": "This is a high-quality home product from Samsung. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=60"
-    ],
-    "rating": "4.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 707.92,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 778.71,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_61",
-    "title": "Dyson Home Item 61",
-    "brand": "Dyson",
-    "description": "This is a high-quality home product from Dyson. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=61"
+      "https://picsum.photos/400?random=yonex"
     ],
     "rating": "4.7",
     "offers": [
       {
-        "seller": "Official Store",
-        "price": 733.04,
+        "seller": "ShopParva Sports",
+        "price": 16790,
         "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 806.34,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_62",
-    "title": "Apple Home Item 62",
-    "brand": "Apple",
-    "description": "This is a high-quality home product from Apple. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=62"
-    ],
-    "rating": "3.9",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 936.05,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1029.65,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_63",
-    "title": "Dyson Beauty Item 63",
-    "brand": "Dyson",
-    "description": "This is a high-quality beauty product from Dyson. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=63"
-    ],
-    "rating": "3.5",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 189.23,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 208.15,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_64",
-    "title": "Adidas Sports Item 64",
-    "brand": "Adidas",
-    "description": "This is a high-quality sports product from Adidas. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=64"
-    ],
-    "rating": "4.3",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 916.38,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1008.02,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_65",
-    "title": "Apple Beauty Item 65",
-    "brand": "Apple",
-    "description": "This is a high-quality beauty product from Apple. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=65"
-    ],
-    "rating": "4.1",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 836.63,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 920.29,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_66",
-    "title": "Nike Home Item 66",
-    "brand": "Nike",
-    "description": "This is a high-quality home product from Nike. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=66"
-    ],
-    "rating": "3.3",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 561.24,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 617.36,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_67",
-    "title": "Apple Beauty Item 67",
-    "brand": "Apple",
-    "description": "This is a high-quality beauty product from Apple. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=67"
-    ],
-    "rating": "4.5",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 973.19,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1070.51,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_68",
-    "title": "Dyson Sports Item 68",
-    "brand": "Dyson",
-    "description": "This is a high-quality sports product from Dyson. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=68"
-    ],
-    "rating": "4.7",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 517.02,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 568.72,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_69",
-    "title": "Nike Sports Item 69",
-    "brand": "Nike",
-    "description": "This is a high-quality sports product from Nike. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=69"
-    ],
-    "rating": "3.3",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 1016.09,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1117.7,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_70",
-    "title": "Nike Electronics Item 70",
-    "brand": "Nike",
-    "description": "This is a high-quality electronics product from Nike. Great value for money.",
-    "category": "Electronics",
-    "images": [
-      "https://picsum.photos/400?random=70"
-    ],
-    "rating": "4.3",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 482.81,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 531.09,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_71",
-    "title": "Samsung Beauty Item 71",
-    "brand": "Samsung",
-    "description": "This is a high-quality beauty product from Samsung. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=71"
-    ],
-    "rating": "4.7",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 817.09,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 898.8,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_72",
-    "title": "Sony Fashion Item 72",
-    "brand": "Sony",
-    "description": "This is a high-quality fashion product from Sony. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=72"
-    ],
-    "rating": "4.2",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 153.37,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 168.71,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_73",
-    "title": "Samsung Electronics Item 73",
-    "brand": "Samsung",
-    "description": "This is a high-quality electronics product from Samsung. Great value for money.",
-    "category": "Electronics",
-    "images": [
-      "https://picsum.photos/400?random=73"
-    ],
-    "rating": "4.6",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 373.09,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 410.4,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_74",
-    "title": "Samsung Beauty Item 74",
-    "brand": "Samsung",
-    "description": "This is a high-quality beauty product from Samsung. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=74"
-    ],
-    "rating": "4.3",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 413.34,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 454.67,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_75",
-    "title": "Sony Sports Item 75",
-    "brand": "Sony",
-    "description": "This is a high-quality sports product from Sony. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=75"
-    ],
-    "rating": "5.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 166.78,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 183.46,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_76",
-    "title": "Adidas Electronics Item 76",
-    "brand": "Adidas",
-    "description": "This is a high-quality electronics product from Adidas. Great value for money.",
-    "category": "Electronics",
-    "images": [
-      "https://picsum.photos/400?random=76"
-    ],
-    "rating": "4.6",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 118.07,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 129.88,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_77",
-    "title": "Nike Home Item 77",
-    "brand": "Nike",
-    "description": "This is a high-quality home product from Nike. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=77"
-    ],
-    "rating": "4.3",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 636.86,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 700.55,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_78",
-    "title": "Adidas Fashion Item 78",
-    "brand": "Adidas",
-    "description": "This is a high-quality fashion product from Adidas. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=78"
-    ],
-    "rating": "4.1",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 205.26,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 225.79,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_79",
-    "title": "Nike Home Item 79",
-    "brand": "Nike",
-    "description": "This is a high-quality home product from Nike. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=79"
-    ],
-    "rating": "3.5",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 806.75,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 887.43,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_80",
-    "title": "Samsung Fashion Item 80",
-    "brand": "Samsung",
-    "description": "This is a high-quality fashion product from Samsung. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=80"
-    ],
-    "rating": "4.8",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 1023.68,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1126.05,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_81",
-    "title": "Nike Electronics Item 81",
-    "brand": "Nike",
-    "description": "This is a high-quality electronics product from Nike. Great value for money.",
-    "category": "Electronics",
-    "images": [
-      "https://picsum.photos/400?random=81"
-    ],
-    "rating": "3.4",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 733.19,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 806.51,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_82",
-    "title": "Dyson Beauty Item 82",
-    "brand": "Dyson",
-    "description": "This is a high-quality beauty product from Dyson. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=82"
-    ],
-    "rating": "3.7",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 329.63,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 362.59,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_83",
-    "title": "Dyson Home Item 83",
-    "brand": "Dyson",
-    "description": "This is a high-quality home product from Dyson. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=83"
-    ],
-    "rating": "3.4",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 346.54,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 381.19,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_84",
-    "title": "Dyson Fashion Item 84",
-    "brand": "Dyson",
-    "description": "This is a high-quality fashion product from Dyson. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=84"
-    ],
-    "rating": "4.9",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 307.8,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 338.58,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_85",
-    "title": "Apple Beauty Item 85",
-    "brand": "Apple",
-    "description": "This is a high-quality beauty product from Apple. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=85"
-    ],
-    "rating": "3.8",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 252.05,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 277.26,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_86",
-    "title": "Sony Sports Item 86",
-    "brand": "Sony",
-    "description": "This is a high-quality sports product from Sony. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=86"
-    ],
-    "rating": "3.7",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 547.19,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 601.91,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_87",
-    "title": "LG Home Item 87",
-    "brand": "LG",
-    "description": "This is a high-quality home product from LG. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=87"
-    ],
-    "rating": "3.6",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 674.28,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 741.71,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_88",
-    "title": "Nike Home Item 88",
-    "brand": "Nike",
-    "description": "This is a high-quality home product from Nike. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=88"
-    ],
-    "rating": "4.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 693.37,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 762.71,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_89",
-    "title": "Adidas Electronics Item 89",
-    "brand": "Adidas",
-    "description": "This is a high-quality electronics product from Adidas. Great value for money.",
-    "category": "Electronics",
-    "images": [
-      "https://picsum.photos/400?random=89"
-    ],
-    "rating": "4.8",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 591.77,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 650.95,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_90",
-    "title": "Nike Fashion Item 90",
-    "brand": "Nike",
-    "description": "This is a high-quality fashion product from Nike. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=90"
-    ],
-    "rating": "5.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 280.5,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 308.55,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_91",
-    "title": "Nike Electronics Item 91",
-    "brand": "Nike",
-    "description": "This is a high-quality electronics product from Nike. Great value for money.",
-    "category": "Electronics",
-    "images": [
-      "https://picsum.photos/400?random=91"
-    ],
-    "rating": "3.2",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 860.16,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 946.18,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_92",
-    "title": "LG Sports Item 92",
-    "brand": "LG",
-    "description": "This is a high-quality sports product from LG. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=92"
-    ],
-    "rating": "4.5",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 543.7,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 598.07,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_93",
-    "title": "Dyson Fashion Item 93",
-    "brand": "Dyson",
-    "description": "This is a high-quality fashion product from Dyson. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=93"
-    ],
-    "rating": "3.4",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 598.47,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 658.32,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_94",
-    "title": "Adidas Beauty Item 94",
-    "brand": "Adidas",
-    "description": "This is a high-quality beauty product from Adidas. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=94"
-    ],
-    "rating": "3.1",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 627.67,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 690.44,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_95",
-    "title": "LG Sports Item 95",
-    "brand": "LG",
-    "description": "This is a high-quality sports product from LG. Great value for money.",
-    "category": "Sports",
-    "images": [
-      "https://picsum.photos/400?random=95"
-    ],
-    "rating": "4.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 687.66,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 756.43,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_96",
-    "title": "Dyson Home Item 96",
-    "brand": "Dyson",
-    "description": "This is a high-quality home product from Dyson. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=96"
-    ],
-    "rating": "4.5",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 899.47,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 989.42,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_97",
-    "title": "Sony Home Item 97",
-    "brand": "Sony",
-    "description": "This is a high-quality home product from Sony. Great value for money.",
-    "category": "Home",
-    "images": [
-      "https://picsum.photos/400?random=97"
-    ],
-    "rating": "3.7",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 659.74,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 725.71,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_98",
-    "title": "Samsung Beauty Item 98",
-    "brand": "Samsung",
-    "description": "This is a high-quality beauty product from Samsung. Great value for money.",
-    "category": "Beauty",
-    "images": [
-      "https://picsum.photos/400?random=98"
-    ],
-    "rating": "4.4",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 658.73,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 724.6,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_99",
-    "title": "Nike Fashion Item 99",
-    "brand": "Nike",
-    "description": "This is a high-quality fashion product from Nike. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=99"
-    ],
-    "rating": "3.7",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 1014.27,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 1115.7,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
-      }
-    ]
-  },
-  {
-    "id": "prod_100",
-    "title": "Nike Fashion Item 100",
-    "brand": "Nike",
-    "description": "This is a high-quality fashion product from Nike. Great value for money.",
-    "category": "Fashion",
-    "images": [
-      "https://picsum.photos/400?random=100"
-    ],
-    "rating": "4.0",
-    "offers": [
-      {
-        "seller": "Official Store",
-        "price": 629.13,
-        "marketplace": "ShopParva",
-        "url": "https://shopparva.com"
-      },
-      {
-        "seller": "Competitor A",
-        "price": 692.04,
-        "marketplace": "Amazon",
-        "url": "https://amazon.com"
+        "url": "https://shopparva.com",
+        "discount": "11%",
+        "delivery": "3 days"
       }
     ]
   }
@@ -2514,7 +1136,71 @@ function normalizeProduct(product) {
     ? Number(product.rating)
     : product.rating;
 
-  return { ...product, categories, rating };
+  const modelName = product.modelName || product.title;
+
+  return { ...product, categories, rating, modelName };
+}
+
+function normalizeQuery(query) {
+  // Remove noise words and normalize
+  const noiseWords = ['buy', 'price', 'online', 'best', 'cheapest', 'deal', 'offer'];
+  let normalized = query.toLowerCase().trim();
+  
+  noiseWords.forEach(word => {
+    normalized = normalized.replace(new RegExp(`\\b${word}\\b`, 'gi'), '');
+  });
+  
+  return normalized.trim().replace(/\s+/g, ' ');
+}
+
+function groupProductsByModel(products) {
+  const grouped = {};
+  
+  products.forEach(product => {
+    const modelName = product.modelName || product.title;
+    if (!grouped[modelName]) {
+      grouped[modelName] = {
+        modelName: modelName,
+        productId: product.id,
+        brand: product.brand,
+        category: product.category,
+        rating: typeof product.rating === 'string' ? Number(product.rating) : product.rating,
+        image: product.images && product.images.length > 0 ? product.images[0] : '',
+        deals: []
+      };
+    }
+    
+    // Add each offer as a deal
+    if (product.offers && product.offers.length > 0) {
+      product.offers.forEach(offer => {
+        grouped[modelName].deals.push({
+          platform: offer.marketplace || 'Unknown',
+          seller: offer.seller || 'Unknown',
+          price: offer.price,
+          url: offer.url || '',
+          currency: '₹',
+          discount: offer.discount || null,
+          delivery: offer.delivery || null
+        });
+      });
+    }
+  });
+  
+  // Identify best price for each model and sort deals by price
+  Object.values(grouped).forEach(model => {
+    if (model.deals.length > 0) {
+      // Sort deals by price (lowest first)
+      model.deals.sort((a, b) => a.price - b.price);
+      
+      // Mark best price
+      const minPrice = Math.min(...model.deals.map(d => d.price));
+      model.deals.forEach(deal => {
+        deal.isBestPrice = deal.price === minPrice;
+      });
+    }
+  });
+  
+  return Object.values(grouped);
 }
 
 const server = http.createServer((req, res) => {
@@ -2538,11 +1224,38 @@ const server = http.createServer((req, res) => {
       .filter(p =>
         p.title.toLowerCase().includes(query) ||
         p.brand.toLowerCase().includes(query) ||
-        p.category.toLowerCase().includes(query)
+        p.category.toLowerCase().includes(query) ||
+        (p.modelName && p.modelName.toLowerCase().includes(query))
       )
       .map(normalizeProduct);
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify(results));
+  }
+
+  else if (path === '/api/v1/search/compare' || path === '/api/search') {
+    const query = url.searchParams.get('q')?.toLowerCase() || '';
+    const normalizedQuery = normalizeQuery(query);
+    
+    // Filter products matching query (search in title, brand, modelName)
+    const matchedProducts = products.filter(p =>
+      p.title.toLowerCase().includes(normalizedQuery) ||
+      p.brand.toLowerCase().includes(normalizedQuery) ||
+      (p.modelName && p.modelName.toLowerCase().includes(normalizedQuery)) ||
+      p.category.toLowerCase().includes(normalizedQuery) ||
+      p.description.toLowerCase().includes(normalizedQuery)
+    );
+    
+    // Group by model and create comparison structure
+    const comparisonResults = groupProductsByModel(matchedProducts);
+    
+    // Return results in format expected by frontend (array of ProductDeal objects)
+    // Each result represents one product model with all its platform deals
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      query: query,
+      normalizedQuery: normalizedQuery,
+      results: comparisonResults
+    }));
   }
 
   else if (path === '/api/v1/products/compare') {
@@ -2563,8 +1276,7 @@ const server = http.createServer((req, res) => {
       req.on('data', chunk => body += chunk);
       req.on('end', () => {
         const { type, budget } = JSON.parse(body || '{}');
-        // Mock generation: pick random items fitting budget
-        const kitItems = products.slice(0, 5).map(normalizeProduct); // Just pick first 5 for demo
+        const kitItems = products.slice(0, 5).map(normalizeProduct);
         const totalPrice = kitItems.reduce((sum, item) => sum + item.offers[0].price, 0);
 
         const kit = {
@@ -2580,22 +1292,265 @@ const server = http.createServer((req, res) => {
     }
   }
 
+  // ========== USER PROFILE APIs ==========
   else if (path === '/api/v1/user/profile') {
-    const mockProfile = {
-      id: "user_123",
-      name: "Demo User",
-      email: "demo@shopparva.com",
-      preferences: {
-        theme: "dark",
-        notifications: true
+    if (req.method === 'GET') {
+      const mockProfile = {
+        id: "user_123",
+        name: "Demo User",
+        email: "demo@shopparva.com",
+        phone: "+91 98765 43210",
+        avatar: null,
+        preferences: {
+          theme: "dark",
+          notifications: true,
+          language: "en",
+          categories: ["Electronics", "Fashion"],
+          budget: 50000
+        }
+      };
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(mockProfile));
+    } else if (req.method === 'PUT') {
+      let body = '';
+      req.on('data', chunk => body += chunk);
+      req.on('end', () => {
+        const updates = JSON.parse(body || '{}');
+        const updatedProfile = {
+          id: "user_123",
+          name: updates.name || "Demo User",
+          email: updates.email || "demo@shopparva.com",
+          phone: updates.phone || "+91 98765 43210",
+          avatar: updates.avatar || null,
+          preferences: updates.preferences || {
+            theme: "dark",
+            notifications: true,
+            language: "en",
+            categories: ["Electronics", "Fashion"],
+            budget: 50000
+          }
+        };
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(updatedProfile));
+      });
+    }
+  }
+
+  else if (path === '/api/v1/user/orders') {
+    const mockOrders = [
+      {
+        id: "order_1",
+        orderNumber: "ORD-2024-001",
+        date: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+        status: "delivered",
+        total: 54999,
+        items: [
+          { productId: "prod_5", name: "Samsung Galaxy S23 Ultra", quantity: 1, price: 54999 }
+        ],
+        shippingAddress: {
+          id: "addr_1",
+          name: "John Doe",
+          phone: "+91 98765 43210",
+          address: "123 Main Street",
+          city: "Mumbai",
+          state: "Maharashtra",
+          pincode: "400001",
+          isDefault: true
+        }
+      },
+      {
+        id: "order_2",
+        orderNumber: "ORD-2024-002",
+        date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+        status: "shipped",
+        total: 29990,
+        items: [
+          { productId: "prod_20", name: "Sony WH-1000XM5", quantity: 1, price: 29990 }
+        ],
+        shippingAddress: {
+          id: "addr_1",
+          name: "John Doe",
+          phone: "+91 98765 43210",
+          address: "123 Main Street",
+          city: "Mumbai",
+          state: "Maharashtra",
+          pincode: "400001",
+          isDefault: true
+        }
       }
-    };
+    ];
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify(mockProfile));
+    res.end(JSON.stringify(mockOrders));
+  }
+
+  else if (path === '/api/v1/user/wishlist') {
+    if (req.method === 'GET') {
+      const mockWishlist = [
+        { id: "wish_1", productId: "prod_1", addedAt: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString() },
+        { id: "wish_2", productId: "prod_9", addedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString() },
+        { id: "wish_3", productId: "prod_24", addedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString() }
+      ];
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(mockWishlist));
+    } else if (req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => body += chunk);
+      req.on('end', () => {
+        const { productId } = JSON.parse(body || '{}');
+        const newItem = {
+          id: "wish_" + Date.now(),
+          productId: productId,
+          addedAt: new Date().toISOString()
+        };
+        res.writeHead(201, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(newItem));
+      });
+    }
+  }
+
+  else if (path.startsWith('/api/v1/user/wishlist/')) {
+    const wishlistId = path.split('/').pop();
+    if (req.method === 'DELETE') {
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ success: true, id: wishlistId }));
+    }
+  }
+
+  else if (path === '/api/v1/user/addresses') {
+    if (req.method === 'GET') {
+      const mockAddresses = [
+        {
+          id: "addr_1",
+          name: "John Doe",
+          phone: "+91 98765 43210",
+          address: "123 Main Street",
+          city: "Mumbai",
+          state: "Maharashtra",
+          pincode: "400001",
+          isDefault: true
+        },
+        {
+          id: "addr_2",
+          name: "John Doe",
+          phone: "+91 98765 43211",
+          address: "456 Park Avenue",
+          city: "Delhi",
+          state: "Delhi",
+          pincode: "110001",
+          isDefault: false
+        }
+      ];
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(mockAddresses));
+    } else if (req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => body += chunk);
+      req.on('end', () => {
+        const address = JSON.parse(body || '{}');
+        const newAddress = {
+          id: "addr_" + Date.now(),
+          name: address.name,
+          phone: address.phone,
+          address: address.address,
+          city: address.city,
+          state: address.state,
+          pincode: address.pincode,
+          isDefault: address.isDefault || false
+        };
+        res.writeHead(201, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(newAddress));
+      });
+    }
+  }
+
+  else if (path.startsWith('/api/v1/user/addresses/')) {
+    const addressId = path.split('/').pop();
+    if (req.method === 'PUT') {
+      let body = '';
+      req.on('data', chunk => body += chunk);
+      req.on('end', () => {
+        const updates = JSON.parse(body || '{}');
+        const updatedAddress = {
+          id: addressId,
+          ...updates
+        };
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(updatedAddress));
+      });
+    } else if (req.method === 'DELETE') {
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ success: true, id: addressId }));
+    }
+  }
+
+  else if (path === '/api/v1/user/preferences') {
+    if (req.method === 'GET') {
+      const mockPreferences = {
+        theme: "dark",
+        notifications: true,
+        language: "en",
+        categories: ["Electronics", "Fashion"],
+        budget: 50000
+      };
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(mockPreferences));
+    } else if (req.method === 'PUT') {
+      let body = '';
+      req.on('data', chunk => body += chunk);
+      req.on('end', () => {
+        const updates = JSON.parse(body || '{}');
+        const updatedPreferences = {
+          theme: updates.theme || "dark",
+          notifications: updates.notifications !== undefined ? updates.notifications : true,
+          language: updates.language || "en",
+          categories: updates.categories || ["Electronics", "Fashion"],
+          budget: updates.budget || 50000
+        };
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(updatedPreferences));
+      });
+    }
+  }
+
+  else if (path === '/api/v1/user/logout') {
+    if (req.method === 'POST') {
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ success: true, message: "Logged out successfully" }));
+    }
+  }
+
+  else if (path === '/api/v1/user/delete') {
+    if (req.method === 'DELETE') {
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ success: true, message: "Account deleted successfully" }));
+    }
+  }
+
+  else if (path === '/api/v1/user/recently-viewed') {
+    const mockRecent = [
+      { productId: "prod_1", viewedAt: new Date(Date.now() - 1 * 60 * 60 * 1000).toISOString() },
+      { productId: "prod_5", viewedAt: new Date(Date.now() - 3 * 60 * 60 * 1000).toISOString() },
+      { productId: "prod_9", viewedAt: new Date(Date.now() - 5 * 60 * 60 * 1000).toISOString() }
+    ];
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(mockRecent));
+  }
+
+  else if (path === '/api/v1/user/saved-kits') {
+    const mockKits = [
+      {
+        id: "kit_1",
+        name: "Gaming Setup",
+        items: ["prod_1", "prod_20"],
+        totalPrice: 84989,
+        createdAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+      }
+    ];
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(mockKits));
   }
 
   else if (path === '/api/v1/ar-assets') {
-    // Mock AR assets response
     const assets = [
       { id: "ar_1", type: "glasses", modelUrl: "/models/glasses.glb", preview: "/images/glasses_preview.png" }
     ];

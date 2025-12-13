@@ -55,6 +55,9 @@ final searchResultsProvider =
   return repo.getProducts(query: query, limit: 40);
 });
 
+// Deal search query for navigating to Deal Tab with search context
+final dealSearchQueryProvider = StateProvider<String?>((ref) => null);
+
 // Kits
 final currentCategoryProvider = StateProvider<String>((ref) => 'Cosmetics');
 

@@ -35,6 +35,9 @@ dependencies:
 
   # Persistence & storage
   shared_preferences: ^2.2.2
+  
+  # Date formatting
+  intl: ^0.19.0
 
   # Camera / AR preview
   camera: ^0.11.0+1
